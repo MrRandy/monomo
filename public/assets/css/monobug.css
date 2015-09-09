@@ -1,0 +1,13 @@
+.message-warning{
+    width: auto;
+    background-color: #FCF8E3;
+    padding: 6px 3px 6px 15px;
+    box-shadow:0 1px 1px 0 rgba(0,0,0,.14);
+    color: #8A6D3B;
+    border: solid 1px #f9d14e;
+}
+.avatar-user{
+    width: 88px;
+    height: 88px;
+    border-radius: 64px;
+}

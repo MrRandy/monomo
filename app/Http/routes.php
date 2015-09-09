@@ -12,10 +12,16 @@
  */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/home', 'HomeController@index');
+
+// Tickets routes...
+Route::get('/tickets','TicketsController@create');
+Route::post('/tickets','TicketsController@store');
+Route::get('/tickets', 'TicketsController@index');
+Route::get('/ticket/{slug?}', 'TicketsController@show');
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
